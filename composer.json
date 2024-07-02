@@ -31,6 +31,9 @@
             "Kirki\\Compatibility\\": [
                 "kirki-packages/compatibility/src"
             ],
+            "Kirki\\Integrations\\": [
+                "integrations"
+            ],
             "Kirki\\Data\\": [
                 "kirki-packages/data-option/src"
             ],

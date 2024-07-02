@@ -1,0 +1,110 @@
+.droip-integrations-wrapper {
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    align-items: center;
+    justify-content: center;
+}
+#droip-integrations-root {
+	background-color: #fff;
+    max-width: 100%;
+    width: 1200px;
+    min-height: 80vh;
+    max-height: 800px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    overflow-y: auto;
+}
+
+.droip-template-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    img {
+        width: 100%;
+    }
+}
+
+.droip-kirki-modal-wrapper {
+    // display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .droip-kirki-modal {
+        width: 600px;
+        height: 400px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 50px;
+    }
+
+    .droip-kirki-modal-header {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.2em;
+        margin-bottom: 50px;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+        .dashicons {
+            font-size: 40px;
+            width: unset;
+            height: unset;
+            cursor: pointer;
+        }
+    }
+
+    .droip-kirki-modal-footer {
+        margin-top: 50px;
+    }
+
+    .droip-kirki-stepper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .dashicons {
+            background-color: #007cba;
+            border-radius: 50%;
+            padding: 5px;
+            color: white;
+        }
+    }
+
+    .rotate-animation {
+        animation-name: rotate-animation;
+        -webkit-animation-duration: .5s; 
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: rotate-animation;
+        -moz-animation-duration: .5s; 
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+    }
+
+    @keyframes rotate-animation {
+        from { 
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+}

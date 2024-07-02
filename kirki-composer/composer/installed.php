@@ -3,7 +3,7 @@
         'name' => 'kirki-framework/kirki',
         'pretty_version' => '5.0.0',
         'version' => '5.0.0.0',
-        'reference' => NULL,
+        'reference' => null,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -31,7 +31,7 @@
         'kirki-framework/kirki' => array(
             'pretty_version' => '5.0.0',
             'version' => '5.0.0.0',
-            'reference' => NULL,
+            'reference' => null,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

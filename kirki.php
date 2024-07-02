@@ -83,12 +83,13 @@ require_once wp_normalize_path( dirname( __FILE__ ) . '/lib/class-aricolor.php' 
 
 // Add an empty config for global fields.
 Kirki::add_config( '' ); // ? Bagus: what is this for? Adding empty config.
-
+$file = __FILE__;
+$dirname = dirname( __FILE__ );
 // ? Bagus: Do we really need this line? custom-config.php here is supposed to inside this plugin. Or is this just in case we need it in the future?
-$custom_config_path = dirname( __FILE__ ) . '/custom-config.php';
-$custom_config_path = wp_normalize_path( $custom_config_path );
-if ( file_exists( $custom_config_path ) ) {
-	require_once $custom_config_path; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude
+$config_path = dirname( __FILE__ ) . '/config.php';
+$config_path = wp_normalize_path( $config_path );
+if ( file_exists( $config_path ) ) {
+	require_once $config_path; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude
 }
 
 // Add upgrade notifications.
